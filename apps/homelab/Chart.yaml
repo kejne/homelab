@@ -1,0 +1,12 @@
+
+apiVersion: v2
+name: homelab
+description: All the apps for the homelab setup
+type: application
+version: 0.1.0
+dependencies:
+
+  - name: cilium
+    version: 1.17.0
+    repository: https://helm.cilium.io/
+
