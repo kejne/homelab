@@ -1,0 +1,8 @@
+version: '3'
+
+tasks:
+  bootstrap:
+    cmds:
+      - kind delete cluster
+      - systemd-run --scope --user kind create cluster
+      - ./bootstrap/init.sh
