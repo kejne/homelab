@@ -4,6 +4,4 @@ tasks:
   bootstrap:
     dir: ./bootstrap
     cmds:
-      - kind delete cluster
-      - systemd-run --scope --user kind create cluster
       - ./init.sh
